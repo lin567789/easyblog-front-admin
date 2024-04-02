@@ -5,6 +5,7 @@
       :show="windowConfig.show"
       :buttons="windowConfig.buttons"
       @close="closeWindow"
+      style="cursor: pointer;"
     >
       <el-form :model="blogFormData" :rules="rules" ref="blogFormRef">
         <el-form-item prop="title">
@@ -12,7 +13,7 @@
             <el-input
               placeholder="请输入博客标题"
               v-model="blogFormData.title"
-            ></el-input>
+            />
           </div>
         </el-form-item>
         <el-form-item prop="content">
